@@ -1,0 +1,7 @@
+{
+  "name": "schoolregister",
+  "description": "school register",
+  "repository": "https://github.com/joaquinto/school_register_deployment",
+  "keywords": ["node", "express", "heroku", "mongodb"],
+  "image": "heroku/nodejs"
+}
