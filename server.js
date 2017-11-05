@@ -10,7 +10,7 @@ const app = express();
 const stud = require('./router/students.router');
 
 mongoose.connect('mongodb://joaquinto:school@ds249325.mlab.com:49325/student_register');
-const port = process.env.PORT || 4070;
+const port = process.env.PORT || 5000;
 
 
 app.use(bodyParser.json());
