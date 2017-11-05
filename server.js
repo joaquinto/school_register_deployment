@@ -8,7 +8,7 @@ const ejs = require('ejs');
 const app = express();
 
 const stud = require('./router/students.router');
-mongoose.connect(process.env.MONGOLAB_URI, { useMongoClient: true });
+mongoose.connect('mongodb://joaquinto:geek5490^%$@ds249415.mlab.com:49415/heroku_tl4mx63d', { useMongoClient: true });
 const port = process.env.PORT || 5000;
 
 
