@@ -189,7 +189,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var StudentService = (function () {
     function StudentService(http) {
         this.http = http;
-        this.domain = 'http://localhost:4070/api/student/';
+        this.domain = 'http://localhost:5000/api/student/';
     }
     StudentService.prototype.getStudents = function () {
         return this.http.get(this.domain).map(function (res) { return res.json(); });
