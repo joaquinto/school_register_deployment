@@ -5,7 +5,7 @@ const Student = require('../model/students.model');
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, 'client/dist/assets/images');
+        cb(null, 'dist/assets/images');
     },
     filename: function (req, file, cb) {
         if (!file.originalname.match(/\.(jpg|jpeg|png)$/)){
@@ -23,7 +23,7 @@ var storage = multer.diskStorage({
     }
 });
 
-var upload = multer({storage: storage, dest: 'client/dist/assets/images'}).single('student_pix');
+var upload = multer({storage: storage, dest: 'dist/assets/images'}).single('student_pix');
 
 router.get('/', function (req, res) {
     Student.find(function (err, student) {
