@@ -8,8 +8,7 @@ const ejs = require('ejs');
 const app = express();
 
 const stud = require('./router/students.router');
-
-mongoose.connect('mongodb://joaquinto:school@ds249325.mlab.com:49325/student_register');
+mongoose.connect('mongodb://joaquinto:geek5490^%$@ds249415.mlab.com:49415/heroku_ws7cnzp8');
 const port = process.env.PORT || 5000;
 
 
